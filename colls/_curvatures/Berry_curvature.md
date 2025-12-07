@@ -1,12 +1,22 @@
 ---
 layout: post
-title: "Berry Curvature"
+title: Berry Curvature
 category: curvatures
 ---
+Berry curvature measures the winding of eigenfunctions [1]
 
-Berry curvature is the curl of 
+$$\mathcal{B}(\mathbf{k}) = \nabla \times \mathcal{A}(\mathbf{k})$$
+## Connected quantities
 
+| Quantity | connection |
+| --- | --- |
+| Pancharatnam-Berry phase | $\gamma = \oint_\mathcal{C}d\mathbf{k}\cdot\mathcal{A}(\mathbf{k})$ |
 
-Berry curvature integrated over the full Brillouin Zone yields the [Chern number]({{ site.baseurl }}{% link _global_charges/Chern-Number.md %})
+### Alternative symbols
 
+| Symbol | Work |
+| --- | --- |
+| $\Omega(\mathbf{k})$ | [1] |
 
+### Citations
+[[1] https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006)
