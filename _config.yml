@@ -42,6 +42,9 @@ plugins:
 remote_theme: sighingnow/jekyll-gitbook
 
 
+url: 'https://karjas.github.io/topology-cheatsheet/'
+baseurl: '/topology-cheatsheet'
+
 collections_dir: "colls"
 
 collections:
