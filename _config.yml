@@ -31,9 +31,31 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #theme: minima
 remote_theme: sighingnow/jekyll-gitbook
 
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
 
 plugins:
   - jekyll-feed
+
+collections_dir: "colls"
+
+collections:
+  curvatures:
+    label: "Curvatures"
+    permalink: /:collection/:path/
+    output: true
+  
+  local_charges:
+    label: "Local charges"
+    permalink: /:collection/:path/
+    output: true
+
+  global_charges:
+    label: "Global charges"
+    permalink: /:collection/:path/
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
