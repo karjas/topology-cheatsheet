@@ -47,17 +47,17 @@ collections_dir: "colls"
 collections:
   curvatures:
     label: "Curvatures"
-    permalink: /:collection/:path/
+      #    permalink: /:collection/:path/
     output: true
   
   local_charges:
     label: "Local charges"
-    permalink: /:collection/:path/
+      #permalink: /:collection/:path/
     output: true
 
   global_charges:
     label: "Global charges"
-    permalink: /:collection/:path/
+      #permalink: /:collection/:path/
     output: true
 
 # Exclude from processing.
