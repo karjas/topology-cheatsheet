@@ -95,6 +95,7 @@ def generate_markdown(data_full, curr, citations_json, preamble = def_pre):
             cit = citations[i].rstrip()
             outf = outf.replace("[{}]".format(citations[i]),"[[{}]]({})".format(ii,citations_json[cit]['url']))
             outf += "[[{}] {}]({})".format(ii,citations_json[cit]['url'],citations_json[cit]['url'])
+    outf += "\n"
         
     return outf    
 
