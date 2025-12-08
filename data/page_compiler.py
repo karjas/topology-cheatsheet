@@ -22,8 +22,12 @@ def read_file_to_json(fnam):
                 key = l.replace("## ","").rstrip()
                 text = ""
             else:
-                text += l.rstrip()
+                if key == "Text":
+                    text += l
+                else:
+                    text += l.rstrip()
         data[key] = text
+    data["Connected quantities"] = extract_connected_quantities_from_text(data['Text'])
     return data
 
 def extract_connected_quantities_from_text(text):
@@ -44,10 +48,10 @@ def generate_markdown(data_full, curr, citations_json, preamble = def_pre):
 
     outf += "\n"
     text = data["Text"]
-    text = text.replace("[equation]","\n\n$${}$$\n".format(data['Equation']))
+    text = text.replace("[equation]","\n\n$${}$$\n\n".format(data['Equation']))
     outf += text
 
-    connected_quantities = extract_connected_quantities_from_text(data["Text"])
+    connected_quantities = data["Connected quantities"]
 
     if len(connected_quantities) > 0:
         outf += """
@@ -59,12 +63,13 @@ def generate_markdown(data_full, curr, citations_json, preamble = def_pre):
         """.replace("    ","")
         quants = connected_quantities
         for q in quants:
+
             links = "[{}]".format(data_full[q]['Name']) + "({{ site.baseurl }}{% link " + "_{}/{}".format(data_full[q]["category"],q) + " %})"
-            outf += "| [{}] | ${}$ |\n".format(q,data_full[q]["Equation"])
+            outf += "| [{}] | $${}$$ |\n".format(q,data_full[q]["Equation"])
             outf = outf.replace("[{}]".format(q),links)
 
     outf += "\n"
-    if data["Alternative symbols"] != "":
+    if "Alternative symbols" in data.keys() and data["Alternative symbols"] != "":
         outf += """
         ### Alternative symbols
         
@@ -87,7 +92,7 @@ def generate_markdown(data_full, curr, citations_json, preamble = def_pre):
 
         for i in idx:
             ii = i+1
-            cit = citations[i]
+            cit = citations[i].rstrip()
             outf = outf.replace("[{}]".format(citations[i]),"[[{}]]({})".format(ii,citations_json[cit]['url']))
             outf += "[[{}] {}]({})".format(ii,citations_json[cit]['url'],citations_json[cit]['url'])
         
@@ -117,6 +122,11 @@ if __name__ == "__main__":
     data = {}
 
     for fold in folds:
+        fold_target = pwd.replace("/data/","/colls/_") + fold
+        for f in os.listdir(fold_target):
+            # Cleans target directories
+            os.remove(fold_target + f)
+        
         for f in os.listdir(pwd + fold):
             if f[0] == ".":
                 continue
@@ -124,10 +134,16 @@ if __name__ == "__main__":
             data[f] = read_file_to_json(pwd + fold + f)
             data[f]['folder'] = pwd + fold
             data[f]['category'] = fold.replace("/","")
-            data[f]['writefolder'] = pwd.replace("/data/","/colls/") + "_{}".format(fold)
+            data[f]['writefolder'] = fold_target
+
 
     with open(pwd + "references.json", 'r') as f:
         citations_json = json.load(f)
+
+    for d in data:
+        for conn in data[d]["Connected quantities"]:
+            if d not in data[conn]["Connected quantities"]:
+                data[conn]["Connected quantities"].append(d)
 
 
     write_pages(data,citations_json)

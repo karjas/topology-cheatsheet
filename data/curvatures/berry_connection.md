@@ -8,11 +8,8 @@ When integrated over a loop, it gives the [pbphase.md].
 It's curl gives the [berry_curvature.md].
 
 ## Equation
-\mathcal{A}_n(\mathbf{k}) = i\langle u_n(\mathbf{k})|\nabla_\mathbf{k}|u_n(\mathbf{k})\rangle
+\mathcal{A}_n(\mathbf{k}) = i\bra{ u_n(\mathbf{k})}\nabla_\mathbf{k}\ket{u_n(\mathbf{k})}
 
-
-## Connected quantities
-pbphase.md
 
 ## Alternative symbols
 ($\Omega(\mathbf{k})$, ozawa2019topological)
