@@ -1,5 +1,27 @@
 {
 	"ozawa2019topological": {
-		"url": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006"
+		"url": "https://doi.org/10.1103/RevModPhys.91.015006"
+	},
+	"zak1989berry": {
+		"url": "https://doi.org/10.1103/PhysRevLett.62.2747"
+	},
+	"vaidya2023topological": {
+		"url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.62.2747"
+	},
+	"salerno2022loss": {
+		"url": "https://doi.org/10.1103/PhysRevLett.129.173901"
+	},
+	"arjas2025topological": {
+		"url": "https://urn.fi/URN:ISBN:978-952-64-2676-1"
+	},
+	"yoda2020generating": {
+		"url": "https://doi.org/10.1103/PhysRevLett.125.053902"
+	},
+	"ahn2019failure": {
+		"url": "https://doi.org/10.1103/PhysRevX.9.021013"
+	},
+	"guillot2025measuring": {
+		"url": "https://doi.org/10.48550/arXiv.2511.03894"
 	}
+
 }

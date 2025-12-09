@@ -1,19 +1,18 @@
 # Pancharatnam-Berry phase
 ## Text
-Pancharatnam-Berry phase is a geometrical phase [ozawa2019topological].
+Pancharatnam-Berry phase is a geometrical phase \cite{ozawa2019topological}.
 
-[equation]
+[equation1]
 
-## Equation
-\gamma = \oint_\mathcal{C}d\mathbf{k}\cdot\mathcal{A}(\mathbf{k})
+where $\mathcal{A}_n$ is the [berry_connection.md]
 
-## Connected quantities
-berry_curvature.md
+The [handedness_weighed_sub_charges.md] carry a $-\pi$ of PB-phase
 
-## Alternative symbols
+[equation2]
 
+## Equations
+$\gamma = \oint_\mathcal{C}d\mathbf{k}\cdot\mathcal{A}(\mathbf{k})$
+$\gamma = -\pi(q_- + q_+)$
 
-## Citations
-ozawa2019topological
 
 

@@ -3,7 +3,7 @@ layout: post
 title: Berry Curvature
 category: curvatures
 ---
-Berry curvature measures the winding of eigenfunctions [[1]](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006)
+Berry curvature measures the winding of eigenfunctions [[1]](https://doi.org/10.1103/RevModPhys.91.015006)
 
 
 
@@ -11,6 +11,10 @@ $$\mathcal{B}_n(\mathbf{k}) = \nabla \times \mathcal{A}_n(\mathbf{k})$$
 
 
 
+where $\mathcal{A_n}$ is the [Berry Connection]({{ site.baseurl }}{% link _curvatures/berry_connection.md %}).
+When integrated over the Brillouin Zone, it yields the [Chern number]({{ site.baseurl }}{% link _global_charges/chern_number.md %}).
+
+ 
 Berry curvature has the following symmetry properties:
 
 | Symm | Behaviour |
@@ -26,16 +30,18 @@ Berry curvature has the following symmetry properties:
 
 | Quantity | connection |
 | --- | --- |
-| [Berry Connection]({{ site.baseurl }}{% link _curvatures/berry_connection.md %}) | $$\mathcal{A}_n(\mathbf{k}) = i\bra{ u_n(\mathbf{k})}\nabla_\mathbf{k}\ket{u_n(\mathbf{k})}$$ |
-| [Chern number]({{ site.baseurl }}{% link _global_charges/Chern_number.md %}) | $$C_n = \frac{1}{2\pi}\int_{BZ} d\mathbf{k} \mathcal{B_n}(\mathbf{k})$$ |
+| [Berry Connection]({{ site.baseurl }}{% link _curvatures/berry_connection.md %}) | $$\mathcal{B}_n(\mathbf{k}) = \nabla \times \mathcal{A}_n(\mathbf{k})$$ |
+| [Chern number]({{ site.baseurl }}{% link _global_charges/chern_number.md %}) | $$C_n = \frac{1}{2\pi}\int_{BZ} d\mathbf{k} \mathcal{B_n}(\mathbf{k})$$ |
 
 
 ### Alternative symbols
 
 | Symbol | Works |
 | --- | --- |
-| $\Omega(\mathbf{k})$ | [[1]](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006) |
+| $\Omega(\mathbf{k})$ | [[1]](https://doi.org/10.1103/RevModPhys.91.015006) |
 
 
 ### Citations
-[[1] https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.015006)
+[[1] https://doi.org/10.1103/RevModPhys.91.015006](https://doi.org/10.1103/RevModPhys.91.015006)
+
+

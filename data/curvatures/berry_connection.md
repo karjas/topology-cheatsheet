@@ -1,21 +1,15 @@
 # Berry Connection
 ## Text
-Berry connection is useful [ozawa2019topological]
+Berry connection is useful \cite{ozawa2019topological}
 
-[equation]
+[equation1]
 
-When integrated over a loop, it gives the [pbphase.md].
-It's curl gives the [berry_curvature.md].
-
-## Equation
-\mathcal{A}_n(\mathbf{k}) = i\bra{ u_n(\mathbf{k})}\nabla_\mathbf{k}\ket{u_n(\mathbf{k})}
+It is used for calculating [1,pbphase.md], [1,berry_curvature.md] and [1,zak_phase.md].
 
 
-## Alternative symbols
-($\Omega(\mathbf{k})$, ozawa2019topological)
+## Equations
+$\mathcal{A}_n(\mathbf{k}) = i\bra{ u_n(\mathbf{k})}\nabla_\mathbf{k}\ket{u_n(\mathbf{k})}$
 
-
-## Citations
-ozawa2019topological
-
+## Symbol
+$\mathcal{A}_n$
 

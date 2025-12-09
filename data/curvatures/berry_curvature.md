@@ -1,9 +1,13 @@
 # Berry Curvature
 ## Text
-Berry curvature measures the winding of eigenfunctions [ozawa2019topological]
+Berry curvature measures the winding of eigenfunctions \cite{ozawa2019topological}
 
-[equation]
+[equation1]
 
+where $\mathcal{A_n}$ is the [berry_connection.md].
+When integrated over the Brillouin Zone, it yields the [1,chern_number.md].
+
+ 
 Berry curvature has the following symmetry properties:
 
 | Symm | Behaviour |
@@ -13,17 +17,10 @@ Berry curvature has the following symmetry properties:
 | Rotation | $\hat R \mathcal{B}_n(\mathbf{k}) = \mathcal{B}_n(\hat R^{-1}\mathbf{k})$|
 | Reflection | $\hat \sigma \mathcal{B}_n(\mathbf{k}) = -\mathcal{B}_n(\hat \sigma^{-1}\mathbf{k})$|
 
-## Equation
-\mathcal{B}_n(\mathbf{k}) = \nabla \times \mathcal{A}_n(\mathbf{k})
-
-## Connected quantities
-pbphase.md
+## Equations
+$\mathcal{B}_n(\mathbf{k}) = \nabla \times \mathcal{A}_n(\mathbf{k})$
 
 ## Alternative symbols
-($\Omega(\mathbf{k})$, ozawa2019topological)
-
-
-## Citations
-ozawa2019topological
+($\Omega(\mathbf{k})$, \cite{ozawa2019topological})
 
 
