@@ -22,6 +22,11 @@
 	},
 	"guillot2025measuring": {
 		"url": "https://doi.org/10.48550/arXiv.2511.03894"
+	},
+	"ezawa2013topological": {
+		"url": "https://doi.org/10.1103/PhysRevB.88.161406"
+	},
+	"eulerWikipedia": {
+		"url": "https://en.wikipedia.org/wiki/Euler_characteristic"
 	}
-
 }

@@ -22,6 +22,7 @@ $$q = \frac{q_- - q_+}{2}$$
 
 
 
+When considering the polarisation vortices over all possible values of $\mathbf{k}$ (torus for periodic systems, sphere for finite), with the [Hairy ball theorem](https://en.wikipedia.org/wiki/Hairy_ball_theorem) one can connect the sum of $q$ to the [Euler Characteristic]({{ site.baseurl }}{% link _global_charges/euler_characteristic.md %}).
 
 
 
@@ -30,6 +31,7 @@ $$q = \frac{q_- - q_+}{2}$$
 
 | Quantity | connection |
 | --- | --- |
+| [Euler Characteristic]({{ site.baseurl }}{% link _global_charges/euler_characteristic.md %}) | $$\chi = \sum_{i} q(\mathbf{k}_i)$$ |
 | [Handedness weighed sub-charges]({{ site.baseurl }}{% link _local_charges/handedness_weighed_sub_charges.md %}) | $$q = \frac{q_- - q_+}{2}$$ |
 
 

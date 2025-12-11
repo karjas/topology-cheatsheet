@@ -11,6 +11,7 @@ $q$ can be decomposed into [handedness_weighed_sub_charges.md], which correspond
 
 [equation2]
 
+When considering the polarisation vortices over all possible values of $\mathbf{k}$ (torus for periodic systems, sphere for finite), with the [Hairy ball theorem](https://en.wikipedia.org/wiki/Hairy_ball_theorem) one can connect the sum of $q$ to the [2,euler_characteristic.md].
 
 
 ## Equations
